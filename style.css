@@ -15,7 +15,7 @@
     text-transform: capitalize;
     transition: 0.2s linear;
     font-family: "Roboto", sans-serif;
-    transition: 0.5s linear;
+    transition: 0.7s linear;
 }
 
 body {
@@ -85,8 +85,8 @@ header {
     letter-spacing: 0.1rem;
     border-radius: 40px;
     transition: 0.7s linear;
-    padding: 1.2rem 3.2rem;
-   
+    padding: 1.2rem 2rem;
+    white-space: nowrap;
 }
 
 .home-container {
@@ -166,52 +166,52 @@ header {
     gap: 1.5rem;
 }
 
-.menu .box-container .box{
+.menu .box-container .box {
     text-align: center;
     border: var(--border);
     padding: 5rem;
     cursor: pointer;
 }
 
-.menu .box-container .box img{
+.menu .box-container .box img {
     height: 10rem;
 }
 
-.menu .box-container .box h3{
+.menu .box-container .box h3 {
     color: #fff;
     font-size: 2rem;
     padding: 1rem 0;
 }
 
-.menu .box-container .box .price{
+.menu .box-container .box .price {
     color: #fff;
     font-size: 2.5rem;
     padding: 0.5rem 0;
 }
 
-.menu .box-container .box .price span{
+.menu .box-container .box .price span {
     font-size: 1.5rem;
     text-decoration: line-through;
     font-weight: lighter;
 }
 
-.menu .box-container .box:hover{
+.menu .box-container .box:hover {
     background-color: #fff;
     transform: translateY(-8px);
     z-index: 3;
 }
 
-.menu .box-container .box:hover>*{
-   color: var(--black);
+.menu .box-container .box:hover>* {
+    color: var(--black);
 }
 
-.review .box-container .box{
+.review .box-container .box {
     border: var(--border);
     padding: 3rem 2rem;
     text-align: center;
 }
 
-.review .box-container .box p{
+.review .box-container .box p {
     font-size: 1.5rem;
     color: #fff;
     padding: 2rem 0;
@@ -219,44 +219,201 @@ header {
     font-weight: lighter;
 }
 
-.review .box-container .box h3{
+.review .box-container .box h3 {
     color: #fff;
     font-size: 1.2rem;
     margin: 1rem 0;
 }
 
- .revie.box-container .box .user{
+.revie.box-container .box .user {
     height: 7rem;
     width: 7rem;
-    border-radius: 50% ;
+    border-radius: 50%;
 }
 
 
 
-.address{
+.address {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.footer{
+.footer {
     text-align: center;
 }
 
-.footer .share{
+.footer .share {
     padding: 1rem 0;
 }
 
-.footer .share img{
+.footer .share img {
     margin: 0.3rem;
     cursor: pointer;
     border-radius: 50%;
     padding: 1rem;
 }
 
-.footer .share img:hover{
+.footer .share img:hover {
     background-color: var(--black);
     transform: translateY(-20px);
 
 }
 
+
+@media(max-width: 1080px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .row img {
+        width: 80rem;
+    }
+
+    .row .btn {
+        display: inline-block;
+    }
+}
+
+@media(max-width: 800px) {
+    .navbar a {
+        font-size: 1.6rem;
+    }
+
+    .title {
+        font-size: 3.5rem;
+    }
+
+    section {
+        .title3 {
+            font-size: 4rem;
+        }
+
+        .paragrafo {
+            font-size: 1.8rem;
+        }
+    }
+
+}
+
+@media(max-width: 730px) {
+    .navbar a {
+        font-size: 1.4rem;
+    }
+
+    header .img-icons {
+        width: 25px;
+        height: auto;
+    }
+
+    section {
+        .title3 {
+            font-size: 3rem;
+        }
+    }
+
+}
+
+@media(max-width: 670px) {
+    header section .navbar a {
+        font-size: 1.4rem;
+    }
+
+    header .img-logo {
+        width: 60px;
+    }
+
+    header .img-icons {
+        display: none;
+    }
+
+    .row img {
+        width: 60rem;
+    }
+
+    .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+
+    .box-menu {
+        width: 15rem;
+    }
+
+    .box-menu .btn:hover {
+        border-radius: 30px;
+        padding: 1.2rem 1rem;
+        white-space: normal;
+    }
+
+    section {
+        .title3 {
+            font-size: 2.5rem;
+        }
+
+        .paragrafo {
+            font-size: 2rem;
+        }
+    }
+
+    .address iframe {
+        width: 100%;
+    }
+
+    .box-avaliaçoes {
+        overflow: hidden;
+    }
+
+    .box-avaliaçoes .img-clientes {
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 550px) {
+    header section .navbar a {
+        font-size: 1.1rem;
+    }
+
+    section {
+        .paragrafo {
+            font-size: 1.7rem;
+        }
+    }
+
+    .box-menu {
+        height: 25rem;
+    }
+
+}
+
+@media(max-width: 477px) {
+    header section .navbar a {
+        font-size: 1rem;
+    }
+
+    header section .img-logo {
+        width: 50px;
+    }
+
+    section {
+        .paragrafo {
+            font-size: 1.5rem;
+        }
+    }
+
+
+}
+
+@media(max-width: 446px) {
+    header section .navbar a {
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+
+    header section{
+        justify-content: normal;
+    }
+}
