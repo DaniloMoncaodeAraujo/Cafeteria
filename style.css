@@ -387,6 +387,7 @@ header {
         height: 25rem;
     }
 
+    
 }
 
 @media(max-width: 477px) {
@@ -413,7 +414,12 @@ header {
         white-space: nowrap;
     }
 
-    header section{
+    header section {
         justify-content: normal;
     }
+
+    .header section .navbar .siga-nos {
+            display: none !important;
+    }  
+
 }
