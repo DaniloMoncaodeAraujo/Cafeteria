@@ -322,6 +322,12 @@ header {
         font-size: 1.4rem;
     }
 
+   header section .navbar a:hover { 
+        padding-bottom: 0.5rem;
+        font-size: 1.7rem;
+    }
+
+
     header .img-logo {
         width: 60px;
     }
@@ -377,6 +383,11 @@ header {
         font-size: 1.1rem;
     }
 
+    header section .navbar a:hover { 
+        padding-bottom: 0.5rem;
+        font-size: 1.3rem;
+    }
+
     section {
         .paragrafo {
             font-size: 1.7rem;
@@ -412,6 +423,11 @@ header {
     header section .navbar a {
         font-size: 1rem;
         white-space: nowrap;
+    }
+
+    header section .navbar a:hover { 
+        padding-bottom: 0.5rem;
+        font-size: 1.2rem;
     }
 
     header section {
