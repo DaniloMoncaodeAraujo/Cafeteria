@@ -309,6 +309,11 @@ header {
         height: auto;
     }
 
+    .icons img:hover {
+        width: 30px;
+        height: auto;
+    }
+
     section {
         .title3 {
             font-size: 3rem;
